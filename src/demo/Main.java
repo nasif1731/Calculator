@@ -11,5 +11,11 @@ public class Main {
 		int mult = n1 * n2;
 		return mult;
 	}
+	private boolean validateInput(int a,int b)
+	{
+		if(a<0 || b<0)
+			return false;
+		return true;
+	}
 
 }
