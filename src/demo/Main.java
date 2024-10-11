@@ -27,7 +27,7 @@ public class Main {
 	public static void main(String[] args) 
 	{
 		Main obj=new Main();
-		int choice,num1,num2;
+		int choice = 0,num1 = 0,num2 = 0;
 		Scanner in =new Scanner(System.in);
 		System.out.println("Enter 1 for addition \n Enter 2 for Subtraction \n+ Enter 3 for Division \n Enter 4 for mutiplication");
 		in.nextInt(choice);
@@ -61,5 +61,13 @@ public class Main {
 	else {System.out.println("Invalid input");}
 	}
 	
+
+	private boolean validateInput(int a,int b)
+	{
+		if(a<0 || b<0)
+			return false;
+		return true;
+	}
+
 
 }
